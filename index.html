@@ -14,8 +14,9 @@
   <header class="topbar">
     <a class="brand" href="#opening" aria-label="Go to opening slide"><span>GK</span><b>Intuit conversation</b></a>
     <div class="progress-wrap" aria-hidden="true"><div class="progress" id="progress"></div></div>
-    <div class="top-actions"><span id="counter">01 / 13</span><button id="overviewButton" type="button">Overview</button></div>
+    <div class="top-actions"><span id="counter">01 / 13</span><button id="editButton" type="button">Edit</button><button id="resetEdits" type="button" hidden>Reset edits</button><button id="overviewButton" type="button">Overview</button></div>
   </header>
+  <div class="edit-notice" id="editNotice" hidden><b>Edit mode</b><span>Click any text to change it. Your edits save automatically in this browser.</span></div>
 
   <main>
     <section class="slide cover active" id="opening" data-title="Opening" data-section="Opening">
@@ -30,10 +31,9 @@
           <p class="card-label">Today’s conversation</p>
           <ol>
             <li><span>01</span><div><b>About me</b><small>My journey and leadership growth</small></div></li>
-            <li><span>02</span><div><b>Portfolio 1 + Q&amp;A</b><small>Mid-Market operating model</small></div></li>
-            <li><span>03</span><div><b>Portfolio 2 + Q&amp;A</b><small>Intuit Accountant Suite</small></div></li>
+            <li><span>02</span><div><b>Portfolio 1 + Q&amp;A</b><small>Intuit Accountant Suite</small></div></li>
+            <li><span>03</span><div><b>Portfolio 2 + Q&amp;A</b><small>Mid-Market operating model</small></div></li>
           </ol>
-          <p class="invitation">Please jump in. I’d like this to feel like a working session, not a monologue.</p>
         </aside>
       </div>
       <div class="slide-footer"><span>Use arrow keys or the controls to navigate</span><button class="next" type="button">Begin <b>→</b></button></div>
@@ -47,25 +47,25 @@
       </div>
       <div class="career-chapters">
         <article>
-          <div class="chapter-top"><span>Chapter 01</span><b>Building the foundation</b></div>
-          <h3>Kaiser · Silicon Valley Bank · Washington Mutual</h3>
-          <p class="chapter-work">Large-scale technology delivery, regulated environments, customer-critical migrations, and leading through execution pressure.</p>
-          <div class="growth"><b>What I learned</b><p>Details matter, but trust matters more. Teams move faster when commitments, risks, and ownership are unambiguous.</p></div>
-          <div class="growth"><b>How I grew</b><p>From managing tasks to owning outcomes—and from solving problems myself to helping teams solve them together.</p></div>
+          <div class="chapter-top"><span>Chapter 01</span><b>Learning to scale</b></div>
+          <h3>PayPal</h3>
+          <p class="chapter-work">Enterprise-wide launches and transformation programs operating under regulatory scrutiny, press visibility, and external-partner pressure.</p>
+          <div class="growth"><b>What I learned</b><p>Scale changes the job. Success requires aligning internal teams with regulators, partners, and public commitments—not simply managing an internal plan.</p></div>
+          <div class="growth"><b>How I grew</b><p>I learned to lead enterprise programs with discipline, anticipate pressure from outside the organization, and keep teams aligned when the stakes were visible.</p></div>
         </article>
         <article>
-          <div class="chapter-top"><span>Chapter 02</span><b>Scaling through systems</b></div>
-          <h3>PayPal · Chegg</h3>
-          <p class="chapter-work">Global platform transformation, Agile adoption across 58 teams, enterprise prioritization, PMO leadership, and M&amp;A integration.</p>
-          <div class="growth"><b>What I learned</b><p>A heroic program manager cannot scale an organization. Repeatable mechanisms, clear priorities, and strong leaders can.</p></div>
-          <div class="growth"><b>How I grew</b><p>From leading programs to designing the operating system around them—and measuring success through business value.</p></div>
+          <div class="chapter-top"><span>Chapter 02</span><b>Becoming a builder</b></div>
+          <h3>Chegg</h3>
+          <p class="chapter-work">A startup-minded environment where the standard process often did not exist—and the business could not wait for one to be perfected.</p>
+          <div class="growth"><b>What I learned</b><p>Sometimes you build the mechanism first; sometimes you launch, learn, and build it behind the work. The key is evolving continuously and quickly.</p></div>
+          <div class="growth"><b>How I grew</b><p>I became a scrambler and a builder—comfortable creating structure from nothing, adapting fast, and balancing rigor with the pace of the business.</p></div>
         </article>
         <article>
-          <div class="chapter-top"><span>Chapter 03</span><b>Leading through ambiguity</b></div>
+          <div class="chapter-top"><span>Chapter 03</span><b>Building the function</b></div>
           <h3>Intuit</h3>
-          <p class="chapter-work">AI, 0→1 platforms, Mid-Market, compliance, cross-business portfolios, and leading TPMs across high-stakes work.</p>
-          <div class="growth"><b>What I learned</b><p>At enterprise scale, clarity is a leadership product. The hardest work is aligning decisions across boundaries.</p></div>
-          <div class="growth"><b>How I grew</b><p>Into a leader who builds other leaders, challenges assumptions directly, and creates momentum without adding noise.</p></div>
+          <p class="chapter-work">IAS taught me to lead through extreme ambiguity. Platform programs taught me to influence without authority—or even organizational priority.</p>
+          <div class="growth"><b>What I learned</b><p>The most strategic TPM work is not running the program. It is creating the clarity, leadership system, and organizational capability that allow many programs to succeed.</p></div>
+          <div class="growth"><b>How I grew</b><p>I became the person who builds the function, develops the talent, and serves as a strategic partner to VP and GM leadership.</p></div>
         </article>
       </div>
       <aside class="speaker-note"><b>Conversation cue</b><span>Invite the panel to ask about any career transition or formative experience.</span></aside>
@@ -107,14 +107,59 @@
         <p>Find the signal. Align the system. Build the mechanism. Enable the team. Measure what changed.</p>
       </div>
       <div class="chapter-cards">
-        <article><span>Case 01</span><h3>Mid-Market operating model</h3><p>Turning cross-org demand chaos into a repeatable prioritization and execution system.</p><b>Ambiguous · Cross-cutting · 0→1 operating model</b></article>
-        <article><span>Case 02</span><h3>Intuit Accountant Suite</h3><p>Launching a new accountant platform while protecting the core date and creating a measurable growth engine.</p><b>0→1 platform · Revenue critical · Customer facing</b></article>
+        <article><span>02 · Portfolio 1</span><h3>Intuit Accountant Suite</h3><p>Launching a new accountant platform while protecting the core date and creating a measurable growth engine.</p><b>0→1 platform · Revenue critical · Customer facing</b></article>
+        <article><span>03 · Portfolio 2</span><h3>Mid-Market operating model</h3><p>Turning cross-org demand chaos into a repeatable prioritization and execution system.</p><b>Ambiguous · Cross-cutting · 0→1 operating model</b></article>
       </div>
     </section>
 
-    <section class="slide case-one" id="mm-context" data-title="MM: Context" data-section="Case 01">
-      <div class="section-tag"><span>02.1</span> Mid-Market operating model</div>
-      <div class="case-header"><div><p class="overline">Context + my role</p><h2>From 70–90+ competing asks to one executable portfolio.</h2></div><div class="case-number">01</div></div>
+    <section class="slide case-two" id="ias-context" data-title="IAS: Context" data-section="Portfolio 1">
+      <div class="section-tag"><span>02</span> Intuit Accountant Suite</div>
+      <div class="case-header"><div><p class="overline">Context + my role</p><h2>Launching a new accountant platform without letting late complexity move the date.</h2></div><div class="case-number">02</div></div>
+      <div class="context-grid">
+        <article class="problem-card"><p class="card-label">The opportunity</p><ul><li>Replace a legacy accountant experience with a strategic new platform</li><li>Coordinate Product, Engineering, Design, Data, Marketing, Sales, and Care</li><li>Protect launch readiness across critical dependencies</li><li>Resolve late pressure to expand the launch metrics dashboard</li></ul></article>
+        <article class="role-card"><p class="card-label">My leadership role</p><h3>Translate the product ambition into an integrated launch system.</h3><p>I built the cross-functional plan, established decision and readiness mechanisms, drove tradeoffs, and created a single executive view of product, operational, and business health.</p><div class="scope-row"><span><b>0→1</b> platform launch</span><span><b>7</b> functions aligned</span><span><b>One</b> launch date protected</span></div></article>
+      </div>
+    </section>
+
+    <section class="slide case-two" id="ias-execution" data-title="IAS: Execution" data-section="Portfolio 1">
+      <div class="section-tag"><span>02</span> Intuit Accountant Suite</div>
+      <p class="overline">Execution + challenge management</p>
+      <h2>Protect the core launch. Make the tradeoff explicit. Fast-follow what is valuable.</h2>
+      <div class="decision-story">
+        <div class="decision-main">
+          <span class="decision-label">The pivotal decision</span>
+          <h3>A late request expanded the metrics dashboard and put the launch path at risk.</h3>
+          <p>I reframed the debate from “dashboard or no dashboard” to the minimum observability required for a responsible launch versus the enhanced insight that could follow safely.</p>
+          <div class="choice"><span>Decision</span><b>Launch with critical health and adoption metrics; deliver the richer dashboard as a fast follow within ~2 weeks.</b></div>
+        </div>
+        <div class="execution-rail">
+          <article><span>Strategy</span><p>Tied launch scope to the accountant journey and measurable business outcomes.</p></article>
+          <article><span>Framework</span><p>Integrated plan, weekly steerco, decision log, readiness reviews, and reusable Go/No-Go criteria.</p></article>
+          <article><span>Dashboard</span><p>Signups, funnel drop-off, SLA, defects, adoption behavior, support signals, and revenue forecast.</p></article>
+          <article><span>Enablement</span><p>Clear owners, launch command center, escalation paths, and shared operating playbook.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide case-two" id="ias-results" data-title="IAS: Results" data-section="Portfolio 1">
+      <div class="section-tag"><span>02</span> Intuit Accountant Suite</div>
+      <p class="overline">Outcomes + relevance</p>
+      <h2>A launch that became a measurable growth engine.</h2>
+      <div class="metrics three-up">
+        <article><strong>5,000+</strong><span>accountant signups in the first quarter</span></article>
+        <article><strong>~$4M</strong><span>product value in one quarter</span></article>
+        <article><strong>18/day</strong><span>decisions accelerated through launch mechanisms</span></article>
+      </div>
+      <div class="relevance-box">
+        <p class="card-label">Why this matters for the role</p>
+        <div><h3>Mid-Market launches will succeed or fail at the seams.</h3><p>This example shows how I connect product vision to engineering execution, commercial readiness, service operations, and measurable adoption—while making disciplined tradeoffs that protect speed and customer trust.</p></div>
+      </div>
+      <aside class="learning"><b>What I learned</b><span>Strong program leadership does not eliminate tension between speed and completeness. It gives leaders a fact-based way to choose.</span></aside>
+    </section>
+
+    <section class="slide case-one" id="mm-context" data-title="MM: Context" data-section="Portfolio 2">
+      <div class="section-tag"><span>03</span> Mid-Market operating model</div>
+      <div class="case-header"><div><p class="overline">Context + my role</p><h2>From 70–90+ competing asks to one executable portfolio.</h2></div><div class="case-number">03</div></div>
       <div class="context-grid">
         <article class="problem-card"><p class="card-label">What I walked into</p><ul><li>70–90+ unranked initiatives across organizations</li><li>Blank or unclear ownership and moving requirements</li><li>Side-channel negotiations creating conflicting commitments</li><li>A hard deadline with no shared source of truth</li></ul></article>
         <article class="role-card"><p class="card-label">Why I was brought in</p><h3>Resolve the chaos and create a system leaders could trust.</h3><p>I owned the cross-organizational operating model—connecting business priorities, product requirements, technical dependencies, capacity, and executive decisions.</p><div class="scope-row"><span><b>11</b> capability programs</span><span><b>Multiple</b> org boundaries</span><span><b>1</b> commitment system</span></div></article>
@@ -122,8 +167,8 @@
       <aside class="speaker-note"><b>Leadership question</b><span>How do you establish authority when accountability spans several leaders and no single org owns the whole outcome?</span></aside>
     </section>
 
-    <section class="slide case-one" id="mm-system" data-title="MM: System" data-section="Case 01">
-      <div class="section-tag"><span>02.1</span> Mid-Market operating model</div>
+    <section class="slide case-one" id="mm-system" data-title="MM: System" data-section="Portfolio 2">
+      <div class="section-tag"><span>03</span> Mid-Market operating model</div>
       <p class="overline">Program strategy + execution framework</p>
       <h2>One portfolio. One stack rank. Mirrored accountability.</h2>
       <div class="system-map">
@@ -143,8 +188,8 @@
       </div>
     </section>
 
-    <section class="slide case-one" id="mm-results" data-title="MM: Results" data-section="Case 01">
-      <div class="section-tag"><span>02.1</span> Mid-Market operating model</div>
+    <section class="slide case-one" id="mm-results" data-title="MM: Results" data-section="Portfolio 2">
+      <div class="section-tag"><span>03</span> Mid-Market operating model</div>
       <p class="overline">Outcomes + relevance</p>
       <h2>The result was not a cleaner tracker.<br><em>It was faster organizational alignment.</em></h2>
       <div class="metrics three-up">
@@ -159,53 +204,8 @@
       <aside class="learning"><b>What I learned</b><span>When everything is important, the TPM leader’s first deliverable is not a plan—it is a credible choice architecture.</span></aside>
     </section>
 
-    <section class="slide case-two" id="ias-context" data-title="IAS: Context" data-section="Case 02">
-      <div class="section-tag"><span>02.2</span> Intuit Accountant Suite</div>
-      <div class="case-header"><div><p class="overline">Context + my role</p><h2>Launching a new accountant platform without letting late complexity move the date.</h2></div><div class="case-number">02</div></div>
-      <div class="context-grid">
-        <article class="problem-card"><p class="card-label">The opportunity</p><ul><li>Replace a legacy accountant experience with a strategic new platform</li><li>Coordinate Product, Engineering, Design, Data, Marketing, Sales, and Care</li><li>Protect launch readiness across critical dependencies</li><li>Resolve late pressure to expand the launch metrics dashboard</li></ul></article>
-        <article class="role-card"><p class="card-label">My leadership role</p><h3>Translate the product ambition into an integrated launch system.</h3><p>I built the cross-functional plan, established decision and readiness mechanisms, drove tradeoffs, and created a single executive view of product, operational, and business health.</p><div class="scope-row"><span><b>0→1</b> platform launch</span><span><b>7</b> functions aligned</span><span><b>One</b> launch date protected</span></div></article>
-      </div>
-    </section>
-
-    <section class="slide case-two" id="ias-execution" data-title="IAS: Execution" data-section="Case 02">
-      <div class="section-tag"><span>02.2</span> Intuit Accountant Suite</div>
-      <p class="overline">Execution + challenge management</p>
-      <h2>Protect the core launch. Make the tradeoff explicit. Fast-follow what is valuable.</h2>
-      <div class="decision-story">
-        <div class="decision-main">
-          <span class="decision-label">The pivotal decision</span>
-          <h3>A late request expanded the metrics dashboard and put the launch path at risk.</h3>
-          <p>I reframed the debate from “dashboard or no dashboard” to the minimum observability required for a responsible launch versus the enhanced insight that could follow safely.</p>
-          <div class="choice"><span>Decision</span><b>Launch with critical health and adoption metrics; deliver the richer dashboard as a fast follow within ~2 weeks.</b></div>
-        </div>
-        <div class="execution-rail">
-          <article><span>Strategy</span><p>Tied launch scope to the accountant journey and measurable business outcomes.</p></article>
-          <article><span>Framework</span><p>Integrated plan, weekly steerco, decision log, readiness reviews, and reusable Go/No-Go criteria.</p></article>
-          <article><span>Dashboard</span><p>Signups, funnel drop-off, SLA, defects, adoption behavior, support signals, and revenue forecast.</p></article>
-          <article><span>Enablement</span><p>Clear owners, launch command center, escalation paths, and shared operating playbook.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="slide case-two" id="ias-results" data-title="IAS: Results" data-section="Case 02">
-      <div class="section-tag"><span>02.2</span> Intuit Accountant Suite</div>
-      <p class="overline">Outcomes + relevance</p>
-      <h2>A launch that became a measurable growth engine.</h2>
-      <div class="metrics three-up">
-        <article><strong>5,000+</strong><span>accountant signups in the first quarter</span></article>
-        <article><strong>~$4M</strong><span>product value in one quarter</span></article>
-        <article><strong>18/day</strong><span>decisions accelerated through launch mechanisms</span></article>
-      </div>
-      <div class="relevance-box">
-        <p class="card-label">Why this matters for the role</p>
-        <div><h3>Mid-Market launches will succeed or fail at the seams.</h3><p>This example shows how I connect product vision to engineering execution, commercial readiness, service operations, and measurable adoption—while making disciplined tradeoffs that protect speed and customer trust.</p></div>
-      </div>
-      <aside class="learning"><b>What I learned</b><span>Strong program leadership does not eliminate tension between speed and completeness. It gives leaders a fact-based way to choose.</span></aside>
-    </section>
-
     <section class="slide synthesis" id="leadership-system" data-title="Leadership system" data-section="Synthesis">
-      <div class="section-tag"><span>03</span> What I would bring</div>
+      <div class="section-tag"><span>04</span> What I would bring</div>
       <p class="overline">My operating thesis</p>
       <h2>TPM leadership is an organizational<br><em>force multiplier.</em></h2>
       <div class="operating-model">
