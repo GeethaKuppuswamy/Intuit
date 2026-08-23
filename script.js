@@ -9,7 +9,7 @@ const editButton = document.getElementById('editButton');
 const resetEdits = document.getElementById('resetEdits');
 const editNotice = document.getElementById('editNotice');
 const editableElements = [...document.querySelectorAll('.slide h1, .slide h2, .slide h3, .slide p, .slide li, .slide blockquote, .slide small, .slide .growth b')];
-const editsKey = 'geetha-intuit-presentation-edits-v5';
+const editsKey = 'geetha-intuit-presentation-edits-v6';
 let current = 0;
 let editing = false;
 
