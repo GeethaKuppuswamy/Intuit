@@ -14,9 +14,8 @@
   <header class="topbar">
     <a class="brand" href="#opening" aria-label="Go to opening slide"><span>GK</span><b>Intuit conversation</b></a>
     <div class="progress-wrap" aria-hidden="true"><div class="progress" id="progress"></div></div>
-    <div class="top-actions"><span id="counter">01 / 15</span><button id="editButton" type="button">Edit</button><button id="resetEdits" type="button" hidden>Reset edits</button><button id="overviewButton" type="button">Overview</button></div>
+    <div class="top-actions"><span id="counter">01 / 15</span></div>
   </header>
-  <div class="edit-notice" id="editNotice" hidden><b>Edit mode</b><span>Click any text to change it. Your edits save automatically in this browser.</span></div>
 
   <main>
     <section class="slide cover active" id="opening" data-title="Opening" data-section="Opening">
@@ -36,7 +35,6 @@
           </ol>
         </aside>
       </div>
-      <div class="slide-footer"><span>Use arrow keys or the controls to navigate</span><button class="next" type="button">Begin <b>→</b></button></div>
     </section>
 
     <section class="slide" id="story" data-title="Career chapters" data-section="About me">
@@ -248,10 +246,6 @@
   </main>
 
   <nav class="controls" aria-label="Presentation controls"><button id="previous" type="button" aria-label="Previous slide">←</button><button id="next" type="button" aria-label="Next slide">→</button></nav>
-  <dialog id="overview">
-    <div class="overview-head"><div><p class="overline">Presentation map</p><h2>Choose a section</h2></div><button id="closeOverview" type="button" aria-label="Close overview">×</button></div>
-    <div class="overview-grid" id="overviewGrid"></div>
-  </dialog>
   <script src="script.js"></script>
 </body>
 </html>
