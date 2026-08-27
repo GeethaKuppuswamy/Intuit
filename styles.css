@@ -78,3 +78,8 @@
 #ias-success .success-story-grid article>span{font-size:30px}
 #ias-success .success-story-grid h3{font-size:22px;line-height:1.2}
 #ias-success .success-story-grid p{font-size:17px;line-height:1.5}
+#mm-context .case-header h2{font-size:34px;white-space:nowrap}
+#mm-context .why-mm-tile{grid-template-columns:190px 1fr}
+#mm-context .why-mm-tile>p:not(.card-label),
+#mm-context .problem-card li,
+#mm-context .role-card>p:not(.card-label){font-size:17px;line-height:1.5}
