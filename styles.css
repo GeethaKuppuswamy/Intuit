@@ -62,3 +62,4 @@
 @media(max-width:900px){#story .section-tag .section-context{display:none}#story .career-intro h2{white-space:normal}.cover-grid{grid-template-columns:1fr}.agenda-card{display:none}}
 #leadership .leadership-cards h3{font-size:25px;line-height:1.2;margin-bottom:12px}
 #leadership .leadership-cards p{font-size:19px;line-height:1.5}
+#ias-challenges .challenge-table td:nth-child(2){color:var(--ink);font-size:17px}
