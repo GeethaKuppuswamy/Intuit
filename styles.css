@@ -65,3 +65,13 @@
 #ias-challenges .challenge-table td:nth-child(2){color:var(--ink);font-size:17px}
 #motivation .why-list h3{font-size:25px;line-height:1.2;margin-bottom:12px}
 #motivation .why-list p{font-size:19px;line-height:1.5}
+#ias-model .material-mockups .mock-head b{font-size:18px}
+#ias-model .material-mockups .mock-head span{font-size:13px}
+#ias-model .material-mockups .binder-sections i{font-size:13px}
+#ias-model .material-mockups .decision-columns i{font-size:11px}
+#ias-model .material-mockups .decision-entry{font-size:13px}
+#ias-model .material-mockups .dashboard-tldr,
+#ias-model .material-mockups .dashboard-details{font-size:13px}
+#ias-model .material-mockups .dashboard-grid b,
+#ias-model .material-mockups .dashboard-grid span{font-size:12px}
+#ias-model .material-mockups p{font-size:15px;line-height:1.35}
