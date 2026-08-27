@@ -103,3 +103,5 @@
 .success-story-grid p,
 .operating-model p,
 .mm-system-grid p{font-size:17px!important;line-height:1.5}
+#mm-pushback .pushback-table td{font-size:17px;color:var(--ink)}
+#mm-pushback .pushback-table td:last-child{color:var(--ink)}
