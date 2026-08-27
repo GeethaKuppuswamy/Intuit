@@ -75,3 +75,6 @@
 #ias-model .material-mockups .dashboard-grid b,
 #ias-model .material-mockups .dashboard-grid span{font-size:12px}
 #ias-model .material-mockups p{font-size:15px;line-height:1.35}
+#ias-success .success-story-grid article>span{font-size:30px}
+#ias-success .success-story-grid h3{font-size:22px;line-height:1.2}
+#ias-success .success-story-grid p{font-size:17px;line-height:1.5}
