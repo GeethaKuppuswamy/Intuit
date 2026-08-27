@@ -83,3 +83,23 @@
 #mm-context .why-mm-tile>p:not(.card-label),
 #mm-context .problem-card li,
 #mm-context .role-card>p:not(.card-label){font-size:17px;line-height:1.5}
+
+/* Slide 8 typography system applied across comparable content slides */
+.slide:not(.cover):not(.chapter):not(.portfolio-transition):not(.close) h2{font-size:clamp(40px,4.6vw,58px)!important;line-height:1.03}
+.career-chapters h3,
+.leadership-cards h3,
+.challenge-grid h3,
+.system-map h3,
+.framework-grid h3,
+.success-story-grid h3,
+.operating-model h3,
+.mm-system-grid h3{font-size:22px!important;line-height:1.2}
+.career-chapters .chapter-work,
+.career-chapters .growth p,
+.leadership-cards p,
+.challenge-grid p,
+.system-map p,
+.framework-grid p,
+.success-story-grid p,
+.operating-model p,
+.mm-system-grid p{font-size:17px!important;line-height:1.5}
