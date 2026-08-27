@@ -83,6 +83,15 @@
 #mm-context .why-mm-tile>p:not(.card-label),
 #mm-context .problem-card li,
 #mm-context .role-card>p:not(.card-label){font-size:17px;line-height:1.5}
+#mm-context .context-grid{grid-template-columns:1.15fr .85fr;align-items:stretch;gap:18px}
+#mm-context .problem-card,#mm-context .role-card{padding:24px 26px}
+#mm-context .problem-card li{padding-top:11px;padding-bottom:11px}
+#mm-context .problem-card li:before{top:18px}
+#mm-context .role-card{display:flex;flex-direction:column;justify-content:center;border:0;border-left:5px solid var(--blue);box-shadow:0 14px 34px rgba(16,27,45,.14)}
+#mm-context .role-card .card-label{margin-bottom:16px}
+#mm-context .role-card h3{font-size:24px;line-height:1.25;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+#mm-context .role-card>p:not(.card-label){margin:0;color:#fff}
+@media(max-width:900px){#mm-context .context-grid{grid-template-columns:1fr}#mm-context .role-card{display:block}}
 
 /* Slide 8 typography system applied across comparable content slides */
 .slide:not(.cover):not(.chapter):not(.portfolio-transition):not(.close) h2{font-size:clamp(40px,4.6vw,58px)!important;line-height:1.03}
