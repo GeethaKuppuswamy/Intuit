@@ -105,3 +105,9 @@
 .mm-system-grid p{font-size:17px!important;line-height:1.5}
 #mm-pushback .pushback-table td{font-size:17px;color:var(--ink)}
 #mm-pushback .pushback-table td:last-child{color:var(--ink)}
+#mm-results .mm-metrics{gap:16px;margin-top:30px}
+#mm-results .mm-metrics article{background:#fff;border:1px solid var(--line);border-top:3px solid var(--blue);padding:22px}
+#mm-results .mm-metrics span{font-size:17px;line-height:1.5;color:var(--ink);max-width:none}
+#mm-results .business-enabled{margin-top:16px!important;padding:16px 20px}
+#mm-results .business-enabled span{font-size:13px}
+#mm-results .business-enabled b{font-size:17px;line-height:1.45;color:var(--ink)}
